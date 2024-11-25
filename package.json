@@ -7,5 +7,14 @@
         "packages/*"
     ],
     "author": "강영서 <youngseo.kangg@gmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "example": "yarn --filter example"
+    },
+    "devDependencies": {
+        "prettier": "latest"
+    },
+    "dependencies": {
+        "typescript": "latest"
+    }
 }

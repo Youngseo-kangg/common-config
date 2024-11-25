@@ -36,8 +36,7 @@ dist/**
 .next/**
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+*.tsbuildinfo 
 
 # node_modules
 node_modules
@@ -51,3 +50,4 @@ node_modules
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.pnp.*

@@ -13,11 +13,21 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "common-config",\
       "reference": "workspace:."\
+    },\
+    {\
+      "name": "@common-config/eslint",\
+      "reference": "workspace:packages/eslint"\
+    },\
+    {\
+      "name": "@common-config/prettier",\
+      "reference": "workspace:packages/prettier"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@common-config/eslint", ["workspace:packages/eslint"]],\
+    ["@common-config/prettier", ["workspace:packages/prettier"]],\
     ["common-config", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -27,6 +37,26 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["prettier", "npm:3.3.3"],\
+          ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@common-config/eslint", [\
+      ["workspace:packages/eslint", {\
+        "packageLocation": "./packages/eslint/",\
+        "packageDependencies": [\
+          ["@common-config/eslint", "workspace:packages/eslint"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@common-config/prettier", [\
+      ["workspace:packages/prettier", {\
+        "packageLocation": "./packages/prettier/",\
+        "packageDependencies": [\
+          ["@common-config/prettier", "workspace:packages/prettier"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -35,9 +65,29 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["common-config", "workspace:."]\
+          ["common-config", "workspace:."],\
+          ["prettier", "npm:3.3.3"],\
+          ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["prettier", [\
+      ["npm:3.3.3", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.3-e811f023f3/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.3.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["typescript", [\
+      ["patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/typescript-patch-aed9e5263d-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]]\
   ]\
