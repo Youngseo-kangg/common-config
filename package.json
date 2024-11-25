@@ -15,6 +15,7 @@
         "example-react": "yarn workspace example-react"
     },
     "devDependencies": {
+        "eslint-config-react-app": "latest",
         "prettier": "latest"
     },
     "dependencies": {
