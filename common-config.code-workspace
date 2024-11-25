@@ -1,0 +1,16 @@
+{
+    "folders": [
+      {
+        "path": "example"
+      },
+      {
+        "path": "packages/*"
+      },
+    ],
+    "extensions": {
+      "recommendations": [ 
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode", 
+      ]
+    },
+  }

@@ -1,0 +1,11 @@
+{
+    "name": "common-config",
+    "private": true,
+    "packageManager": "yarn@4.5.2",
+    "workspaces": [
+        "example",
+        "packages/*"
+    ],
+    "author": "강영서 <youngseo.kangg@gmail.com>",
+    "license": "MIT"
+}
