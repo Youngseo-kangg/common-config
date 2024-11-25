@@ -3,8 +3,6 @@
     "main": "index.js",
     "version": "1.0.0",
     "peerDependencies": {
-        "eslint-config-prettier": "*",
-        "eslint-plugin-prettier": "*",
         "prettier": ">= 3"
     }
 }

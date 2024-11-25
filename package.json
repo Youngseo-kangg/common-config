@@ -9,7 +9,9 @@
     "author": "강영서 <youngseo.kangg@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "example": "yarn --filter example"
+        "example": "yarn --filter example",
+        "eslint": "yarn workspace @common-config/eslint",
+        "prettier": "yarn workspace @common-config/prettier"
     },
     "devDependencies": {
         "prettier": "latest"
