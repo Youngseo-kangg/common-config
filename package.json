@@ -3,7 +3,7 @@
     "private": true,
     "packageManager": "yarn@4.5.2",
     "workspaces": [
-        "example",
+        "example-react",
         "packages/*"
     ],
     "author": "강영서 <youngseo.kangg@gmail.com>",
@@ -11,7 +11,8 @@
     "scripts": {
         "example": "yarn --filter example",
         "eslint": "yarn workspace @common-config/eslint",
-        "prettier": "yarn workspace @common-config/prettier"
+        "prettier": "yarn workspace @common-config/prettier",
+        "example-react": "yarn workspace example-react"
     },
     "devDependencies": {
         "prettier": "latest"
