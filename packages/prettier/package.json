@@ -1,0 +1,29 @@
+{
+  "name": "@youngseo-kangg/prettier-plugin",
+  "version": "1.0.0",
+  "description": "common configuration for prettier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngseo-kangg/common-config.git"
+  },
+  "keywords": [
+    "prettier",
+    "config"
+  ],
+  "author": "Youngseo Kang <youngseo.kangg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Youngseo-kangg/common-config/issues"
+  },
+  "homepage": "https://github.com/Youngseo-kangg/common-config#readme",
+  "peerDependencies": {
+    "prettier": ">= 3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
