@@ -2,7 +2,7 @@
   "name": "@youngseo-kangg/prettier-plugin",
   "version": "1.0.0",
   "description": "common configuration for prettier",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "nanobundle build --root-dir=./"
