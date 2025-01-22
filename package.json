@@ -1,8 +1,22 @@
 {
-  "name": "common-config",
+  "name": "@youngseo-kangg/common-config",
   "version": "0.0.0",
   "description": "common configuration setting for eslint, prettier, etc,.",
   "main": "index.js",
+  "repository": "https://github.com/Youngseo-kangg/common-config",
+  "author": "Youngseo Kang <youngseo.kangg@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "ultra-runner": "^3.10.5"
+  },
+  "ultra": {
+    "concurrent": [
+      "build"
+    ]
+  }
 }
