@@ -1,0 +1,8 @@
+{
+  "name": "common-config",
+  "version": "0.0.0",
+  "description": "common configuration setting for eslint, prettier, etc,.",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@4.6.0"
+}
