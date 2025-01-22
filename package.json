@@ -14,7 +14,8 @@
     "build": "ultra -r build",
     "release": "yarn changeset publish",
     "version": "changeset version && yarn install --no-immutable",
-    "eslint": "yarn workspace @youngseo-kangg/eslint-plugin"
+    "eslint": "yarn workspace @youngseo-kangg/eslint-plugin",
+    "prettier": "yarn workspace @youngseo-kangg/prettier-plugin"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.11",
