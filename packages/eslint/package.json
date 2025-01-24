@@ -1,6 +1,6 @@
 {
   "name": "@youngseo-kangg/eslint-plugin",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "common configuration for eslint",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
