@@ -19,7 +19,15 @@
   "author": "Youngseo Kang <youngseo.kangg@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "main": "./index.js",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "source": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
     "index.js",
     "src",
