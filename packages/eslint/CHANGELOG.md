@@ -1,5 +1,11 @@
 # @youngseo-kangg/eslint-plugin
 
+## 2.2.0
+
+### Minor Changes
+
+- afa7d2b: language option config 수정, index.js 및 package.json 원복, tanstack query 관련 workaround 적용"
+
 ## 2.1.0
 
 ### Minor Changes
