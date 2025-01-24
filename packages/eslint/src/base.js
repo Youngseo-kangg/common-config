@@ -13,6 +13,27 @@ export const config = [
     name: "Config ignore patterns",
     ignores: ["node_modules/**", "dist/**", "build/**"],
   },
+  {
+    name: "Config LanguageOption",
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: "latest", // 최신 JavaScript 문법 사용
+      parserOptions: {
+        project: true,
+        tsconfigRootDir: process.cwd(),
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        process: "readonly",
+        React: "readonly",
+        console: "readonly",
+      },
+    },
+  },
   // ESLint 기본 추천 규칙 적용
   js.configs.recommended,
   // rushstack 기본 추천 규칙 적용
