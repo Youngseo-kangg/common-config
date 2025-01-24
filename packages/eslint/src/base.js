@@ -3,16 +3,20 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import jsonFormat from "eslint-plugin-json-format";
 import ImportPlugin from "eslint-plugin-import";
 import unusedImports from "eslint-plugin-unused-imports";
-import rushStack from "@rushstack/eslint-config";
+// import rushStack from "@rushstack/eslint-config";
 
 /**
  * @type {import("eslint").Linter.Config}
  */
 export const config = [
+  {
+    name: "Config ignore patterns",
+    ignores: ["node_modules/**", "dist/**", "build/**"],
+  },
   // ESLint 기본 추천 규칙 적용
   js.configs.recommended,
   // rushstack 기본 추천 규칙 적용
-  rushStack.Config.recommended,
+  // rushStack.Config.recommended,
   // 'no' 키워드 필요한 eslint rule 관련 규칙 적용
   {
     name: "no-* rules",
@@ -34,13 +38,13 @@ export const config = [
   },
   {
     name: "json format rules",
-    Plugins: {
+    plugins: {
       "json-format": jsonFormat,
     },
   },
   {
     name: "import related rules",
-    Plugins: {
+    plugins: {
       import: ImportPlugin,
       "simple-import-sort": simpleImportSort,
     },
