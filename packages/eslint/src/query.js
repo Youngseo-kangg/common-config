@@ -1,14 +1,14 @@
-import ReactQueryConfigs from "@tanstack/eslint-plugin-query";
+import * as tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
 
 export const config = [
   {
     name: "react query configs",
     files: ["src/**/*.{ts,tsx}"],
     plugins: {
-      "@tanstack/query": {
-        rules: ReactQueryConfigs.rules,
-      },
+      "@tanstack/query": tanstackQueryPlugin,
     },
-    rules: ReactQueryConfigs.configs.recommended.rules,
+    rules: {
+      ...tanstackQueryPlugin.configs.recommended.rules,
+    },
   },
 ];
